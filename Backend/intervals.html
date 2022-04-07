@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Intervals</title>
+    </head>
+    <body>
+        <div></div>
+        <button onclick="stop()">Stop timer interval</button>
+        <script>
+            let i = 0;
+            let interval = setInterval(() => {
+                i++;
+                document.querySelector('div').textContent = i;
+            }, 1000);
+            const stop = () => {
+                clearInterval(interval);
+            };
+        </script>
+    </body>
+</html>
